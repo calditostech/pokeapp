@@ -13,4 +13,4 @@ foi desenvolvida com VUE.JS
 
 Tela da aplicação do Pokemon
 
-<img src="../assets/tela.png">
+<img src="./assets/tela.png">
