@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div class="column is-half is-offset-one-quarter">
-      <img src="./assets/pokemon-logo-png.png">
+      <img src="./assets/pokemon-logo.png">
       <hr>
       <h4 class="is-size-4">Pokemon App</h4>
-      <input type="text" name="" id="" placeholder="Buscar Pokemon" v-model="busca">
+      <input type="text" name="" id="barra-bsc" placeholder="BUSCAR POKEMON...." v-model="busca">
       <button class="btn-buscar" @click="buscar">Buscar</button>
     <div v-for="(poke,index) in filteredPokemons" :key="poke.url">
       <Pokemon :name="poke.name" :url="poke.url" :num="index+1"/>
@@ -68,4 +68,19 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+#barra-bsc{
+  height: 60px;
+  width: 500px;
+  border: 3px solid black;
+}
+
+.btn-buscar{
+  height: 60px;
+  width: 100px;
+  background-color: blue;
+  font-size: 16px;
+  color: beige;
+}
+
 </style>

@@ -1,19 +1,18 @@
 <template>
-     <div id="pokemon">
-     <div class="w3-container">
+   <div id="pokemon">
+       <div class="w3-container">
           <h2>Pokemon Card</h2>
-      <div class="w3-card-4" style="width:50%">
-           <img :src="pokemon.front" alt="Placeholder imagem">
-      <div class="w3-container w3-center">
-           <p>{{num}} - {{name | upper}}</p>
-           <p>{{pokemon.type}}</p>
-      </div>
-      </div>
-      <div class="content">
-            <button class="button is-medium is fullwidth" @click="exibirValores">Caracteristicas</button>
-      </div>
+  <div class="w3-card-4" style="width:50%">
+    <img :src="pokemon.front" class="poke" alt="Placeholder imagem">
+    <div class="w3-container w3-center">
+        <div class="texto">
+      <p>{{num}} - {{name | upper}}</p>
+      <p>{{pokemon.type}}</p>
+        </div>
+    </div>
+  </div>
    </div>
-   </div>
+</div>
 </template>
 
 <script>
@@ -46,11 +45,6 @@ export default {
             var newName = value[0].toUpperCase() + value.slice(1);
             return newName;
         }
-    },
-    methods: {
-        exibirValores: function(){
-
-        }
     }
 }
 </script>
@@ -59,4 +53,22 @@ export default {
     #pokemon{
         margin-top: 2%;
     }
+
+    body {
+        background-color: #f44336;
+    }
+
+    .w3-container{
+        background-color: white;      
+    }
+
+    .texto{
+        margin-left: 310px;
+    }
+
+    .poke{
+        margin-left: 300px;
+    }
+
+
 </style>

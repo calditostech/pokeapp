@@ -1,24 +1,16 @@
 # pokemon-app
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Esta uma aplicação consumindo a API da pokeapi
 
-### Compiles and minifies for production
-```
-npm run build
-```
+para rodar ela rode o comando npm run serve
 
-### Lints and fixes files
-```
-npm run lint
-```
+rodara na porta http://localhost:8080/ ou na http://localhost:8081/
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ele faz um sistema de busca de um pokemon informando o nome dele e o tipo do pokemon
+
+foi desenvolvida com VUE.JS
+
+Tela da aplicação do Pokemon
+
+<img src="./assets/tela.png">
